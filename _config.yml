@@ -1,1 +1,319 @@
-theme: jekyll-theme-slate
+<!DOCTYPE html>
+<html lang="is">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UX ráðgjöf</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script>
+        /**
+            *
+            * FUNCTIONS 
+            *
+            **/
+        // function readMore() {
+        //     modal.style.display = "block";
+        //     var readMore = document.getElementById('read-more')
+        //     document.getElementById('modal-content').innerHTML = readMore.innerHTML;
+        // }
+        function selectContactMedium(el1, el2, el3, str) {
+            var element1 = document.getElementById(el1);
+            var element2 = document.getElementById(el2);
+            var contactBox = document.getElementById(el3);
+            console.log('selectContactMedium', element1, element2, contactBox)
+            if (element1.src.includes('-inactive')) {
+                console.log('hæhæhæ')
+                contactBox.placeholder = str;
+                element1.src = element1.src.replace('-inactive', '-active');
+                element2.src = element2.src.replace('-active', '-inactive');
+            }
+        }
+        function sendForm(el1, el2) {
+            var name = document.getElementById(el1).value
+            var phone = document.getElementById(el2).value
+            console.log(phone, name);
+            modal.style.display = 'none';
+            document.getElementById('main-content').innerHTML = '<h1>Takk fyrir</h1><p>Við höfum samband.</p>';
+            document.getElementById('tilbod-t').style.display = 'none';
+            // let fetchData = { 
+            //     method: 'POST', 
+            //     body: data
+            // }
+            // fetch(url, fetchData)
+            // .then(function() {
+            //     // Handle response you get from the server
+            // });
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- READ MORE TEMPLATE -->
+    <div id="myModal2" class="modal">
+        <div class="modal-cont" style="height: 600px;">
+                <span class="close clickable" onclick="closeModal()">&times;</span>
+
+                <div id="read-more" class="read-m">
+                        <div style="text-align: center; padding: 26px;">
+                                <b>UX - User Experience - Notendaupplifun</b><br><br>
+            
+                                Ánægðir viðskiptavinir koma aftur. Mjög ánægðir viðskiptavinir koma ekki bara aftur, heldur benda
+                                líka
+                                öðrum á þig.<br><br>
+                                Með frábærri notendaupplifun eykur þú tekjur og fjölgar viðskiptavinum. <br><br>
+                                Hvernig upplifa þínir viðskiptavinir vefinn þinn, appið þitt, þjónustuna þína og markaðsefni? <br><br>
+                                Skráðu þig og við hjálpum þér að gera upplifunina frábæra.
+            
+                            </div>
+
+                            <div style="display: flex; flex-direction: column; align-items: center">
+
+                                    <!-- TEMPLATE -->
+                
+                            <div>
+                                <div>
+                                    <div class="your-name">
+                                        Hvernig er best að hafa samband?
+                                    </div>
+                                </div>
+                                <div class="spass" style="display: flex; flex-direction: row; align-items: center;">
+                                    <img src="./assets/phone-active.svg" id="phone2" class=" contact-button" onclick="selectContactMedium('phone2', 'email2', 'contact-box2', 'Skrifaðu símanúmer')">
+                                    <img src="./assets/email-inactive.svg" id="email2" class=" contact-button" onclick="selectContactMedium('email2', 'phone2', 'contact-box2', 'Skrifaðu netfang')">
+                                    <div >
+                                        <input id="contact-box2" class="input-box" placeholder="Skrifaðu símanúmer" >
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="your-name">
+                                        Hvað heitir snillingurinn?
+                                    </div>
+                                    <input id="name2" placeholder="Nafn" class="input-box spass phone-box">
+                                </div>
+                                <button class="big-btn btn2 clickable" type="button" onclick="sendForm('name2', 'contact-box2')">FÁ RÁÐGJÖF</button>
+                            </div>
+                
+                            <!-- /TEMPLATE -->
+                
+                                </div>
+                </div>
+        </div>
+    </div>
+    <!-- /READ MORE TEMPLATE -->
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+
+        <!-- MODAL CONTENT -->
+        <div class="modal-cont">
+                <span class="close clickable" onclick="closeModal()">&times;</span>
+
+            <div style="padding: 40px 0;" id="modal-content">
+                <div class="base-font" style="text-align: center; margin: 30px 0px;">
+                    Vilt þú ánægðari viðskiptavini? <br>
+                    Leyfðu okkur að hjálpa þér.
+                </div>
+
+                <div style="display: flex; flex-direction: column; align-items: center;">
+
+                    <!-- TEMPLATE -->
+
+                    <div>
+                        <div>
+                            <div class="your-name">
+                                Hvernig er best að hafa samband?
+                            </div>
+                        </div>
+                        <div class="spass" style="display: flex; flex-direction: row; align-items: center;">
+                            <img src="./assets/phone-active.svg" id="phone3" class=" contact-button" onclick="selectContactMedium('phone3', 'email3', 'contact-box3', 'Skrifaðu símanúmer')">
+                            <img src="./assets/email-inactive.svg" id="email3" class=" contact-button" onclick="selectContactMedium('email3', 'phone3', 'contact-box3', 'Skrifaðu netfang')">
+                            <div>
+                                <input id="contact-box3" class="input-box" placeholder="Skrifaðu símanúmer">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="your-name">
+                                Hvað heitir snillingurinn?
+                            </div>
+                            <input id="name3" placeholder="Nafn" class="input-box spass phone-box">
+                        </div>
+                        <button class="big-btn btn2 clickable" type="button" onclick="sendForm('name3', 'contact-box3')">FÁ
+                            RÁÐGJÖF</button>
+                    </div>
+
+                    <!-- /TEMPLATE -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /MODAL CONTENT -->
+
+    </div>
+    <!-- /MODAL -->
+
+    <div class="all">
+
+        <div class="container stoff">
+
+            <!-- HEADER -->
+            <header class="row space-b headhead">
+                <div><img src="./assets/logo.svg" class="logo" style="margin-top: 10px;"></div>
+                <div><button id="tilbod-t" class="big-btn btn1 tilbod-takki clickable" id="myBtn" onclick="openModal('myModal')">FÁ RÁÐGJÖF</button></div>
+            </header>
+            <!-- /HEADER -->
+
+            <!-- MAIN IMAGE FOR MOBILE ONLY -->
+            <div><img src="./assets/7.jpg" class="ko-img2"></div>
+            <!-- /MAIN IMAGE FOR MOBILE ONLY -->
+
+            <!-- MAIN CONTENT -->
+            <div class="spassia">
+
+                <form class="dalkur">
+
+                    <div class="title-st">
+                        <span style="line-height: 1.5;">ÞÍNIR VIÐSKIPTAVINIR</span>
+                        <span class="good">ÁNÆGÐARI</span>
+                    </div>
+
+                    <div class="strik"> </div>
+
+                    <div id="main-content">
+                        <div class="radgjof">
+                            Ráðgjöf í notendaupplifun fyrir fyrirtæki sem þykja vænt um viðskiptavini sína
+                            <a class="clickable read-more-link" onclick="openModal('myModal2')">lesa meira…</a>
+                        </div>
+
+                        <div class="formform"  >
+
+                            <!-- TEMPLATE -->
+
+                            <div>
+                                <div>
+                                    <div class="your-name">
+                                        Hvernig er best að hafa samband?
+                                    </div>
+                                </div>
+                                <div class="spass" style="display: flex; flex-direction: row; align-items: center;">
+                                    <img src="./assets/phone-active.svg" id="phone1" class=" contact-button" onclick="selectContactMedium('phone1', 'email1', 'contact-box1', 'Skrifaðu símanúmer')">
+                                    <img src="./assets/email-inactive.svg" id="email1" class=" contact-button" onclick="selectContactMedium('email1', 'phone1', 'contact-box1', 'Skrifaðu netfang')">
+                                    <div class="bla">
+                                        <input id="contact-box1" class="input-box" placeholder="Skrifaðu símanúmer" >
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="your-name">
+                                        Hvað heitir snillingurinn?
+                                    </div>
+                                    <input id="name1" placeholder="Nafn" class="input-box spass phone-box">
+                                </div>
+                                <button class="big-btn btn2 clickable" type="button" onclick="sendForm('name1', 'contact-box1')">FÁ RÁÐGJÖF</button>
+                            </div>
+
+                            <!-- /TEMPLATE -->
+
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <!-- /MAIN CONTENT -->
+
+        </div>
+
+        <!-- MAIN IMAGE -->
+        <div> <img src="./assets/6.jpg" class="ko-img"></div>
+        <!-- /MAIN IMAGE -->
+
+        <!-- TESTEMONIALS -->
+        <div class="container">
+
+            <div class="recommend spassia">
+
+                <!-- TESTEMONIAL 1 -->
+                <div class="rec-small">
+                    <div class="rec-img"><img src="./assets/quote1.svg" style="width: 100px; height: 100px;"></div>
+                    <div>
+                        <div class="bl-text">
+                            <span class="job-title"><b>Steinar Þór Ólafsson</b></span><br>
+                            <span><span style="color: #FF9933" class="job-title">Markaðsstjóri Skeljungs</span><br></span>
+                            <span>
+                                “Stafræn upplifun viðskiptavina er það mikilvægasta í markaðs- og ímyndarmálum í dag.
+                                UX Ráðgjöf vann með okkur að umbótum á ferlum sem við töldum flekklausa fyrir.
+                                Fyrsta flokks þjónusta”
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 1 -->
+
+                <!-- TESTEMONIAL 2 -->
+                <div class="rec-small">
+                    <div class="rec-img"><img src="./assets/quote2.svg" style="width: 100px; height: 100px;"></div>
+                    <div>
+                        <div class="bl-text">
+                            <span class="job-title"><b>Steinar Þór Ólafsson</b></span><br>
+                            <span><span style="color: #FF9933" class="job-title">Markaðsstjóri Skeljungs</span><br></span>
+                            <span>
+                                “Stafræn upplifun viðskiptavina er það mikilvægasta í markaðs- og ímyndarmálum í dag.
+                                UX Ráðgjöf vann með okkur að umbótum á ferlum sem við töldum flekklausa fyrir.
+                                Fyrsta flokks þjónusta”
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 2-->
+            </div>
+        </div>
+        <!-- /TESTEMONIALS -->
+
+        <!-- FOOTER -->
+        <footer class="foofooter all-center">
+            <div class="spassia foofoofoo">
+                <span>
+                    Hafðu samband:
+                </span>
+                <span>
+                    <span class="contact-bold">radgjof@uxradgjof.is</span> eða <span class="contact-bold">556-6600</span>
+                </span>
+            </div>
+        </footer>
+        <!-- / FOOTER -->
+
+    </div>
+
+    <script>
+        /**
+         * 
+         * MODAL 
+         *
+         **/
+        var modal = document.getElementById('myModal');
+        function openModal(modalId) {
+            // Get the modal
+            modal = document.getElementById(modalId);
+            console.log(modalId, modal)
+            modal.style.display = "block";
+     
+        }
+        
+       // When the user clicks anywhere outside of the modal, close it
+       window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        function closeModal () {
+            console.log('closeModal', modal);
+            modal.style.display = "none";
+        }
+  
+    </script>
+
+</body>
+
+</html>
