@@ -1,2 +1,0 @@
-# uxradgjof
-UX Ráðgjöf website
