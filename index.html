@@ -14,12 +14,6 @@
             *
             **/
 
-        // function readMore() {
-        //     modal.style.display = "block";
-        //     var readMore = document.getElementById('read-more')
-        //     document.getElementById('modal-content').innerHTML = readMore.innerHTML;
-        // }
-
         function selectContactMedium(el1, el2, el3, str) {
             var element1 = document.getElementById(el1);
             var element2 = document.getElementById(el2);
@@ -39,24 +33,38 @@
             var name = document.getElementById(el1).value
             var phone = document.getElementById(el2).value
 
-            console.log(phone, name);
-
             modal.style.display = 'none';
-            document.getElementById('main-content').innerHTML = '<h1>Takk fyrir</h1><p>Við höfum samband.</p>';
+            document.getElementById('main-content').innerHTML = '<h1>Augnablik...</h1>';
             document.getElementById('tilbod-t').style.display = 'none';
-
-            // let fetchData = { 
-            //     method: 'POST', 
-            //     body: data
-            // }
-            // fetch(url, fetchData)
-            // .then(function() {
-            //     // Handle response you get from the server
-            // });
+            post('https://formspree.io/davidsimonar@gmail.com', {name, phone}, 'post');
 
         }
-    </script>
 
+        function post(path, params, method) {
+            method = method || "post"; // Set method to post by default if not specified.
+
+            // The rest of this code assumes you are not using a library.
+            // It can be made less wordy if you use one.
+            var form = document.createElement("form");
+            form.setAttribute("method", method);
+            form.setAttribute("action", path);
+
+            for(var key in params) {
+                if(params.hasOwnProperty(key)) {
+                    var hiddenField = document.createElement("input");
+                    hiddenField.setAttribute("type", "hidden");
+                    hiddenField.setAttribute("name", key);
+                    hiddenField.setAttribute("value", params[key]);
+
+                    form.appendChild(hiddenField);
+                }
+            }
+
+            document.body.appendChild(form);
+            form.submit();
+        }
+
+    </script>
 
 </head>
 
