@@ -36,7 +36,7 @@
             modal.style.display = 'none';
             document.getElementById('main-content').innerHTML = '<h1>Augnablik...</h1>';
             document.getElementById('tilbod-t').style.display = 'none';
-            post('https://formspree.io/davidsimonar@gmail.com', {name, phone}, 'post');
+            post('https://formspree.io/radgjof@uxradgjof.is', {name, phone}, 'post');
 
         }
 
@@ -123,7 +123,7 @@
     <!-- /READ MORE TEMPLATE -->
 
     <!-- MODAL -->
-    <div id="myModal" class="modal">
+     <div id="myModal" class="modal">
 
         <!-- MODAL CONTENT -->
         <div class="modal-cont">
@@ -178,12 +178,15 @@
 
             <!-- HEADER -->
             <header class="row space-b headhead">
-                
+
                 <div><img src="./assets/logo.svg" class="logo" style="margin-top: 10px;"></div>
 
-            <!-- Fá Ráðgjöf takki í horni --> <!--
+            <!-- Fá Ráðgjöf takki í horni --> 
+            <!--
                 <div><button id="tilbod-t" class="big-btn btn1 tilbod-takki clickable" id="myBtn" onclick="openModal('myModal')">FÁ RÁÐGJÖF</button></div>
             -->
+
+
             </header>
             <!-- /HEADER -->
 
@@ -215,22 +218,36 @@
 
                             <div>
                                 <div>
+
+                                    <!-- Texti fyrir ofan input box -->
+                                    <!--
                                     <div class="your-name">
                                         Hvernig er best að hafa samband?
                                     </div>
+                                    -->
                                 </div>
                                 <div class="spass" style="display: flex; flex-direction: row; align-items: center;">
+
+                                    <!-- Síma icon og email icon og takkar -->
+                                    <!--
                                     <img src="./assets/phone-active.svg" id="phone1" class=" contact-button" onclick="selectContactMedium('phone1', 'email1', 'contact-box1', 'Skrifaðu símanúmer')">
                                     <img src="./assets/email-inactive.svg" id="email1" class=" contact-button" onclick="selectContactMedium('email1', 'phone1', 'contact-box1', 'Skrifaðu netfang')">
+                                    -->
+
+
                                     <div class="bla">
-                                        <input id="contact-box1" class="input-box" placeholder="Skrifaðu símanúmer" >
+                                        <input id="contact-box1" class="input-box" placeholder="Skrifaðu nafn" >
                                     </div>
                                 </div>
                                 <div>
+                                    <!-- Texti fyrir ofan input box -->
+                                    <!--
+                                    <div
                                     <div class="your-name">
                                         Hvað heitir snillingurinn?
                                     </div>
-                                    <input id="name1" placeholder="Nafn" class="input-box spass phone-box">
+                                    -->
+                                    <input id="name1" placeholder="Símanúmer eða email" class="input-box spass phone-box">
                                 </div>
                                 <button class="big-btn btn2 clickable" type="button" onclick="sendForm('name1', 'contact-box1')">FÁ RÁÐGJÖF</button>
                             </div>
@@ -257,6 +274,55 @@
 
                 <!-- TESTEMONIAL 1 -->
                 <div class="rec-small">
+                    <div class="rec-img"><img src="./assets/icon_skyrsla.svg" style="width: 50px; height: 50px;"></div>
+                    <div>
+                        <div class="bl-text">
+                            <span class="job-title"><b>SKÝRSLA</b></span><br>
+                            <span>
+                                Þú færð skýrslu og verkefnalista með öllu sem þarf að laga í upplifuninni.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 1 -->
+
+                <!-- TESTEMONIAL 2 -->
+                <div class="rec-small">
+                    <div class="rec-img"><img src="./assets/icon_verkefnalisti.svg" style="width: 50px; height: 50px;"></div>
+                    <div>
+                        <div class="bl-text">
+                            <span class="job-title"><b>VERKEFNALISTI</b></span><br>
+                            <span>
+                                Við fylgjum verkefnalistanum eftir og hjálpum til við útfærsluatriði.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 2-->
+
+                <!-- TESTEMONIAL 3 -->
+                <div class="rec-small">
+                    <div class="rec-img"><img src="./assets/icon_endurgjof.svg" style="width: 50px; height: 50px;"></div>
+                    <div>
+                        <div class="bl-text">
+                            <span class="job-title"><b>LOKA ENDURGJÖF</b></span><br>
+                            <span>
+                                Við förum yfir verkefnið að lokum og tryggjum að allt sé gert á réttan hátt.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 3-->
+            </div>
+        </div>
+        <!-- /TESTEMONIALS -->
+
+        <div class="container">
+
+            <div class="recommend spassia">
+
+                <!-- TESTEMONIAL 1 -->
+                <div class="rec-small">
                     <div class="rec-img"><img src="./assets/quote1.svg" style="width: 100px; height: 100px;"></div>
                     <div>
                         <div class="bl-text">
@@ -277,12 +343,11 @@
                     <div class="rec-img"><img src="./assets/quote2.svg" style="width: 100px; height: 100px;"></div>
                     <div>
                         <div class="bl-text">
-                            <span class="job-title"><b>Steinar Þór Ólafsson</b></span><br>
-                            <span><span style="color: #FF9933" class="job-title">Markaðsstjóri Skeljungs</span><br></span>
+                            <span class="job-title"><b>Anna Björk Theodórsdóttir</b></span><br>
+                            <span><span style="color: #FF9933" class="job-title">Framkvæmdastjóri Sea Data Center</span><br></span>
                             <span>
-                                “Stafræn upplifun viðskiptavina er það mikilvægasta í markaðs- og ímyndarmálum í dag.
-                                UX Ráðgjöf vann með okkur að umbótum á ferlum sem við töldum flekklausa fyrir.
-                                Fyrsta flokks þjónusta”
+                                “UX Ráðgjöf hjálpaði okkur mikið með
+                                að gera vefsíðuna okkar skiljanlegri og aðgengilegri, sem er lykillinn að bættri þjónustu við okkar viðskiptavini”
                             </span>
                         </div>
                     </div>

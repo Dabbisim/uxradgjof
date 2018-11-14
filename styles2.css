@@ -34,7 +34,6 @@
 
 .read-m {
   text-align: center;
-  
 }
 
 .clickable {
@@ -79,14 +78,14 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+/*
 .strik {
   background-color: #1e3f5a;
   width: 65px;
   height: 4px;
   margin-bottom: 20px;
 }
-
+*/
 .good {
   font-weight: bold;
   line-height: 0.6;
@@ -95,6 +94,8 @@ body {
 .formform {
   margin-top: 30px;
   width: 400px;
+  background-color: #f7fbff;
+
 }
 
 .headhead {
@@ -135,7 +136,6 @@ h1 {
   background-color: #ff9933;
   border-radius: 8px;
   font-weight: 550;
-
   font-size: 16px;
   color: white;
   border: 0px;
@@ -151,7 +151,9 @@ h1 {
 }
 
 .btn2 {
-  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 90%;
   /* 300px */
   height: 55px;
 }
@@ -174,12 +176,12 @@ h1 {
   height: 48px;
   font-size: 17px;
   padding: 0 10px;  
-  width: 100%;
+  width: 90%;
   box-sizing: border-box;  
 }
 
 .bla {
-  width: 400px;
+  width: 400;
 }
 
 
@@ -235,6 +237,7 @@ h1 {
 .recommend {
   /* display: flex;  */
   padding: 10px 0px;
+  text-align: center;
   /* justify-content: space-between;    */
 }
 
@@ -391,6 +394,7 @@ h1 {
   }
 
   /*
+
   .arrow-up {
     position: relative;
     width: 0;
@@ -440,7 +444,8 @@ h1 {
   }
 
   .formform {
-    width: 90vw;
+    width: 360;
+    height: 288;
     margin-left: 10px; 
     margin-right: 10px; 
   }
