@@ -78,14 +78,14 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/*
+
 .strik {
   background-color: #1e3f5a;
   width: 65px;
   height: 4px;
   margin-bottom: 20px;
 }
-*/
+
 .good {
   font-weight: bold;
   line-height: 0.6;
@@ -95,7 +95,6 @@ body {
   margin-top: 30px;
   width: 400px;
   background-color: #f7fbff;
-
 }
 
 .headhead {

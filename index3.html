@@ -36,7 +36,7 @@
             modal.style.display = 'none';
             document.getElementById('main-content').innerHTML = '<h1>Augnablik...</h1>';
             document.getElementById('tilbod-t').style.display = 'none';
-            post('https://formspree.io/davidsimonar@gmail.com', {name, phone}, 'post');
+            post('https://formspree.io/radgjof@uxradgjof.is', {name, phone}, 'post');
 
         }
 
@@ -123,7 +123,7 @@
     <!-- /READ MORE TEMPLATE -->
 
     <!-- MODAL -->
-    <div id="myModal" class="modal">
+     <div id="myModal" class="modal">
 
         <!-- MODAL CONTENT -->
         <div class="modal-cont">
@@ -200,44 +200,110 @@
                 <form class="dalkur">
 
                     <div class="title-st">
-                        <span style="line-height: 1.5;">ÞÍNIR VIÐSKIPTAVINIR</span>
-                        <span class="good">ÁNÆGÐARI</span>
+                        <span style=>ÞÍNIR VIÐSKIPTAVINIR</span>
+                    </div>
+
+                    <div class="title-st2">
+                        <span style=>ÁNÆGÐARI</span>
                     </div>
 
                     <div class="strik"> </div>
 
+
+
+
                     <div id="main-content">
+
                         <div class="radgjof">
-                            Ráðgjöf í notendaupplifun fyrir fyrirtæki sem þykja vænt um viðskiptavini sína
+                            Ráðgjöf í notendaupplifun fyrir fyrirtæki sem þykja vænt um viðskiptavini sína. Þeir sem elska til dæmis að fá sér kaffi og lesa blöðin
                             <a class="clickable read-more-link" onclick="openModal('myModal2')">lesa meira…</a>
                         </div>
 
-                        <div class="formform"  >
+                        <div class="radgjof2">
 
-                            <!-- TEMPLATE -->
+                        	
 
-                            <div>
-                                <div>
-                                    <div class="your-name">
-                                        Hvernig er best að hafa samband?
-                                    </div>
-                                </div>
-                                <div class="spass" style="display: flex; flex-direction: row; align-items: center;">
-                                    <img src="./assets/phone-active.svg" id="phone1" class=" contact-button" onclick="selectContactMedium('phone1', 'email1', 'contact-box1', 'Skrifaðu símanúmer')">
-                                    <img src="./assets/email-inactive.svg" id="email1" class=" contact-button" onclick="selectContactMedium('email1', 'phone1', 'contact-box1', 'Skrifaðu netfang')">
-                                    <div class="bla">
-                                        <input id="contact-box1" class="input-box" placeholder="Skrifaðu símanúmer" >
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="your-name">
-                                        Hvað heitir snillingurinn?
-                                    </div>
-                                    <input id="name1" placeholder="Nafn" class="input-box spass phone-box">
-                                </div>
+
+                        	<div class="bla"> 
+
+								<div id="read-more" class="read-m">
+                        		<div style="text-align: center; padding: 26px;">
+                                <b>Leyfðu okkur að hjálpa!</b><br> Skráðu þig og við höfum samband!<br>
+
+                                    <input id="contact-box1" class="input-box" placeholder="Skrifaðu nafn" >
+                                    <input id="name1" class="input-box2" placeholder="Símanúmer eða email" >
+									<button class="big-btn btn2 clickable" type="button" onclick="sendForm('name1', 'contact-box1')">FÁ RÁÐGJÖF</button>
+
+                            </div>
+
+                         
+                            
+                            </div>
+                          
+                        </div>
+ 
+<!--
+						<div class="radgjof2">
+                           <!-- <div class="spass" style="display: flex; flex-direction: row; align-items: center;">  
+                            <div class="bla">
+                                <input id="contact-box1" class="input-box" placeholder="Skrifaðu nafn">
+                            </div>
+							<div>
+                                <input id="name1" placeholder="Símanúmer eða email" class="input-box">
+                            </div>
+							</div>
                                 <button class="big-btn btn2 clickable" type="button" onclick="sendForm('name1', 'contact-box1')">FÁ RÁÐGJÖF</button>
                             </div>
 
+
+                        </div>
+
+-->
+
+<!-- 
+                        <div class="formform"  >
+-->
+                            <!-- TEMPLATE -->
+<!-- 
+                            <div>
+                                <div>
+-->
+                                    <!-- Texti fyrir ofan input box -->
+                                    <!--
+                                    <div class="your-name">
+                                        Hvernig er best að hafa samband?
+                                    </div>
+                                    -->
+                                    <!-- 
+                                </div>
+                                <div class="spass" style="display: flex; flex-direction: row; align-items: center;">
+-->
+                                    <!-- Síma icon og email icon og takkar -->
+                                    <!--
+                                    <img src="./assets/phone-active.svg" id="phone1" class=" contact-button" onclick="selectContactMedium('phone1', 'email1', 'contact-box1', 'Skrifaðu símanúmer')">
+                                    <img src="./assets/email-inactive.svg" id="email1" class=" contact-button" onclick="selectContactMedium('email1', 'phone1', 'contact-box1', 'Skrifaðu netfang')">
+                                    -->
+<!-- 
+
+                                    <div class="bla">
+                                        <input id="contact-box1" class="input-box" placeholder="Skrifaðu nafn" >
+                                    </div>
+                                </div>
+                                <div>
+                                	-->
+                                    <!-- Texti fyrir ofan input box -->
+                                    <!--
+                                    <div
+                                    <div class="your-name">
+                                        Hvað heitir snillingurinn?
+                                    </div>
+                                    -->
+                                    <!-- 
+                                    <input id="name1" placeholder="Símanúmer eða email" class="input-box spass phone-box">
+                                </div>
+                                <button class="big-btn btn2 clickable" type="button" onclick="sendForm('name1', 'contact-box1')">FÁ RÁÐGJÖF</button>
+                            </div>
+-->
                             <!-- /TEMPLATE -->
 
                         </div>
@@ -254,22 +320,117 @@
         <!-- /MAIN IMAGE -->
 
         <!-- TESTEMONIALS -->
+
+        <div class="bla1"> 
+
+                                <div id="read-more" class="read-m">
+                                <div style="text-align: center; padding: 26px; font-size: 24px;">
+                                <b>Þú ert snillingurinn.</b><br> Við hjálpum þér að bæta snilldina!<br>
+        </div>
+
+        <div class="container">
+
+            <div class="recommend spassia">
+
+
+                <!-- TESTEMONIAL 1 -->
+                <div class="rec-small">
+
+                    <div class="rec-small1">
+
+                    <div class="rec-img"><img src="./assets/icon_skyrsla.svg" style="width: 50px; height: 50px;">
+                    </div>
+                    
+                    <div>
+                        <div style="text-align: center; padding: 26px;">
+                                    <span class="job-title"><b>SKÝRSLA</b></span><br>
+                                    <span>
+                                    Þú færð skýrslu og verkefnalista með öllu sem þarf að laga í upplifuninni.
+                                    </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 1 -->
+
+                <!-- TESTEMONIAL 2 -->
+                <div class="rec-small">
+
+                    <div class="rec-small1">
+
+                    <div class="rec-img"><img src="./assets/icon_verkefnalisti.svg" style="width: 50px; height: 50px;">
+                    </div>
+                    
+                    <div>
+                        <div style="text-align: center; padding: 26px;">
+                                    <span class="job-title"><b>VERKEFNALISTI</b></span><br>
+                                    <span>
+                                    Við fylgjum verkefnalistanum eftir og hjálpum til við útfærsluatriði.
+                                    </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 2-->
+
+                <!-- TESTEMONIAL 3 -->
+                <div class="rec-small">
+
+                    <div class="rec-small1">
+
+                    <div class="rec-img"><img src="./assets/icon_endurgjof.svg" style="width: 50px; height: 50px;">
+                    </div>
+                    
+                    <div>
+                        <div style="text-align: center; padding: 26px;">
+                                    <span class="job-title"><b>LOKA ENDURGJÖF</b></span><br>
+                                    <span>
+                                    Við förum yfir verkefnið að lokum og tryggjum að allt sé gert á réttan hátt.
+                                    </span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- /TESTEMONIAL 3-->
+            </div>
+        </div>
+        <!-- /TESTEMONIALS -->
+
+        <!-- TESTEMONIALS -->
+
+        <div class="bla5"> 
+
+        <div class="bla1"> 
+
+                                <div id="read-more" class="read-m">
+                                <div style="text-align: center; padding: 26px; font-size: 24px;">
+                                <b>Viðskiptavinir okkar eru hæst ánægðir.</b><br>Sjáðu hvað þau hafa að segja.<br>
+        </div>
+
         <div class="container">
 
             <div class="recommend spassia">
 
                 <!-- TESTEMONIAL 1 -->
                 <div class="rec-small">
-                    <div class="rec-img"><img src="./assets/quote1.svg" style="width: 100px; height: 100px;"></div>
-                    <div>
-                        <div class="bl-text">
-                            <span class="job-title"><b>Steinar Þór Ólafsson</b></span><br>
-                            <span><span style="color: #FF9933" class="job-title">Markaðsstjóri Skeljungs</span><br></span>
-                            <span>
+
+                    <div class="rec-small2">
+
+                        <div class="rec-img"><img src="./assets/quote1.svg" style="width: 100px; height: 100px;">
+                        </div>
+                    
+                        <div>
+                            <div style="text-align: center; padding: 26px;">
+                                <div class="bl-text">
+                                    <span class="job-title"><b>Steinar Þór Ólafsson</b></span><br>
+                                    <span><span style="color: #FF9933" class="job-title">Markaðsstjóri Skeljungs</span><br></span>
+                                    <span>
                                 “Stafræn upplifun viðskiptavina er það mikilvægasta í markaðs- og ímyndarmálum í dag.
                                 UX Ráðgjöf vann með okkur að umbótum á ferlum sem við töldum flekklausa fyrir.
                                 Fyrsta flokks þjónusta”
-                            </span>
+                                </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,24 +438,36 @@
 
                 <!-- TESTEMONIAL 2 -->
                 <div class="rec-small">
-                    <div class="rec-img"><img src="./assets/quote2.svg" style="width: 100px; height: 100px;"></div>
-                    <div>
-                        <div class="bl-text">
-                            <span class="job-title"><b>Anna Björk Theodórsdóttir</b></span><br>
-                            <span><span style="color: #FF9933" class="job-title">Framkvæmdastjóri Sea Data Center</span><br></span>
-                            <span>
-                                “UX Ráðgjöf hjálpaði okkur mikið með
-                                að gera vefsíðuna okkar skiljanlegri og aðgengilegri, sem er lykillinn að bættri þjónustu við okkar viðskiptavini”
-                            </span>
+
+                    <div class="rec-small2">
+
+                        <div class="rec-img"><img src="./assets/arnar.svg" style="width: 100px; height: 100px;">
+                        </div>
+                    
+                        <div>
+                            <div style="text-align: center; padding: 26px;">
+                                <div class="bl-text">
+                                    <span class="job-title"><b>Arnar Laufdal</b></span><br>
+                                    <span><span style="color: #FF9933" class="job-title">Framkvæmdastjóri Kaptio</span><br></span>
+                                    <span>
+                                “Stafræn upplifun viðskiptavina er það mikilvægasta í markaðs- og ímyndarmálum í dag.
+                                UX Ráðgjöf vann með okkur að umbótum á ferlum sem við töldum flekklausa fyrir.
+                                Fyrsta flokks þjónusta”
+                                </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
                 <!-- /TESTEMONIAL 2-->
             </div>
+
         </div>
+</div>
         <!-- /TESTEMONIALS -->
 
-        <!-- FOOTER -->
+<!-- FOOTER -->
         <footer class="foofooter all-center">
             <div class="spassia foofoofoo">
                 <span>
@@ -306,6 +479,7 @@
             </div>
         </footer>
         <!-- / FOOTER -->
+        
 
     </div>
 

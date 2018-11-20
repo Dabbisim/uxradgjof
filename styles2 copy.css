@@ -75,26 +75,43 @@ body {
 }
 
 .title-st {
-  font-size: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: 415px;
+  height: 50px;
+  font-size: 40px;
+  margin-top: 56px;
 }
 
+.title-st2 {
+  width: 415px;
+  height: 50px;
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.title-st3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;  
+  width: 100%;
+}
+/*
 .strik {
   background-color: #1e3f5a;
   width: 65px;
   height: 4px;
   margin-bottom: 20px;
 }
-
+*/
 .good {
   font-weight: bold;
-  line-height: 0.6;
+  line-height: 1;
 }
 
 .formform {
-  margin-top: 30px;
-  width: 400px;
+  height: 288px;
+  margin-top: 56px;
+  width: 360px;
+  background-color: #f7fbff;
 }
 
 .headhead {
@@ -109,11 +126,24 @@ body {
   font-size: 17px;
 }
 
+.texti {
+  text-align: center; 
+  background-color: #000000;
+}
+
 .radgjof {
-  margin-top: 30px;
+  margin-top: 33px;
   font-size: 17px;
   line-height: 1.6;
   color: #838586;
+}
+
+.radgjof2 {
+  height: 288px;
+  margin-top: 55px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #f7fbff;
 }
 
 .all-center {
@@ -127,18 +157,21 @@ h1 {
 }
 
 .logo {
-  width: 274px;
-  height: 47;
+  width: 204px;
+  height: 35px;
 }
 
 .big-btn {
   background-color: #ff9933;
   border-radius: 8px;
   font-weight: 550;
-
   font-size: 16px;
   color: white;
   border: 0px;
+  margin-top: 10px;
+  /*margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 30px;*/
 }
 
 .bl-text {
@@ -151,9 +184,9 @@ h1 {
 }
 
 .btn2 {
+  padding: 0 10px;  
   width: 100%;
-  /* 300px */
-  height: 55px;
+  height: 50px;
 }
 
 .your-name {
@@ -176,10 +209,38 @@ h1 {
   padding: 0 10px;  
   width: 100%;
   box-sizing: border-box;  
+  margin-top: 19px;
+}
+
+.input-box2 {
+  border-radius: 4px;
+  border: 1px solid #b3b3b3;
+  height: 48px;
+  font-size: 17px;
+  padding: 0 10px;  
+  width: 100%;
+  box-sizing: border-box;  
+  margin-top: 10px;
 }
 
 .bla {
-  width: 400px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.bla1 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.bla5 {
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #edf1f5;
+  height: 400px;
 }
 
 
@@ -187,7 +248,17 @@ h1 {
   color: #b3b3b3;
 }
 
+.input-box2::placeholder {
+  color: #b3b3b3;
+}
+
 .container {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.container2 {
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -216,7 +287,7 @@ h1 {
 
 .ko-img {
   width: 100% !important;
-  height: 80vh;
+  height: 110vh;
   /* min-height: 620px !important; */
   object-fit: cover !important;
   object-position: center top !important;
@@ -240,20 +311,53 @@ h1 {
 
 .rec-small {
   display: flex;
+  margin-top: 30px;
+  height: 100px;
   /* justify-content: center; */
   /* align-items: center;  */
 }
 
+.rec-small10 {
+  display: flex;
+  margin-top: 30px;
+  /* justify-content: center; */
+  /* align-items: center;  */
+}
+
+.rec-small2 {
+  /* justify-content: center; */
+  /* align-items: center;  */
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.rec-small2 {
+  /* justify-content: center; */
+  /* align-items: center;  */
+}
+
+.rec-small3 {
+  /* justify-content: center; */
+  /* align-items: center;  */
+}
+
+.rec-small4 {
+  background-color: #000000;
+  /* justify-content: center; */
+  /* align-items: center;  */
+}
 .foofooter {
   background-color: #1e3f5a;
   color: white;
   height: 90px;
+  margin-top: 80px;
 }
 
 .rec-img {
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
   margin: 0 15px;
 }
 
@@ -321,8 +425,8 @@ h1 {
 /* PHONE */
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 274px;
-    height: 47px;
+    width: 204px;
+    height: 35px;
   }
 
   .dalkur {
@@ -343,6 +447,13 @@ h1 {
   }
 
   .container {
+    /* width: 90vw; */
+    margin-left: 0vw;
+    margin-right: 0vw;
+    width: 100vw;
+  }
+
+   .container2 {
     /* width: 90vw; */
     margin-left: 0vw;
     margin-right: 0vw;
@@ -391,7 +502,6 @@ h1 {
   }
 
   /*
-
   .arrow-up {
     position: relative;
     width: 0;
