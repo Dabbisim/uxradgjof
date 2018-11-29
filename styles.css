@@ -321,8 +321,10 @@ background-color: #000000;
 
 .rec-small {
   margin: 20px;
+  height: 100px;
   flex-grow: 1;
   justify-content: center;  
+  background-color: #000000;
   height: fit-content;
 }
 
