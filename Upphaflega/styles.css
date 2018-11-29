@@ -34,12 +34,7 @@
 
 .read-m {
   text-align: center;
-}
-
-.read-m2 {
-  text-align: center;
-  padding: 26px;
-  font-size: 24px;
+  
 }
 
 .clickable {
@@ -80,37 +75,26 @@ body {
 }
 
 .title-st {
-  width: 900px;
-  height: 50px;
-  font-size: 40px;
-  margin-top: 56px;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.title-st2 {
-  width: 900px;
-  height: 50px;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-/*
 .strik {
   background-color: #1e3f5a;
   width: 65px;
   height: 4px;
   margin-bottom: 20px;
 }
-*/
+
 .good {
   font-weight: bold;
-  line-height: 1;
+  line-height: 0.6;
 }
 
 .formform {
-  height: 288px;
-  margin-top: 56px;
-  width: 360px;
-  background-color: #f7fbff;
+  margin-top: 30px;
+  width: 400px;
 }
 
 .headhead {
@@ -125,24 +109,11 @@ body {
   font-size: 17px;
 }
 
-.texti {
-  text-align: center; 
-  background-color: #000000;
-}
-
 .radgjof {
-  margin-top: 33px;
-  font-size: 16px;
+  margin-top: 30px;
+  font-size: 17px;
   line-height: 1.6;
-}
-
-.radgjof2 {
-  width: 360px;
-  height: 300px;
-  margin-top: 55px;
-  font-size: 18px;
-  border-radius: 6px;
-  background-color: #f7fbff;
+  color: #838586;
 }
 
 .all-center {
@@ -156,22 +127,18 @@ h1 {
 }
 
 .logo {
-  width: 204px;
-  height: 35px;
+  width: 274px;
+  height: 47;
 }
 
 .big-btn {
   background-color: #ff9933;
   border-radius: 8px;
   font-weight: 550;
+
   font-size: 16px;
   color: white;
   border: 0px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /*margin-left: 35px;
-  margin-right: 35px;
-  margin-bottom: 30px;*/
 }
 
 .bl-text {
@@ -181,14 +148,12 @@ h1 {
 .btn1 {
   width: 240px;
   height: 60px;
-  margin-top: 30px;
-
 }
 
 .btn2 {
-  padding: 0 10px;  
-  width: 60%;
-  height: 50px;
+  width: 100%;
+  /* 300px */
+  height: 55px;
 }
 
 .your-name {
@@ -211,55 +176,14 @@ h1 {
   padding: 0 10px;  
   width: 100%;
   box-sizing: border-box;  
-  margin-top: 19px;
-}
-
-.input-box2 {
-  border-radius: 4px;
-  border: 1px solid #b3b3b3;
-  height: 48px;
-  font-size: 17px;
-  padding: 0 10px;  
-  width: 100%;
-  box-sizing: border-box;  
-  margin-top: 10px;
-}
-
-.input-box3 {
-  border-radius: 4px;
-  border: 1px solid #b3b3b3;
-  height: 48px;
-  font-size: 17px;
-  padding: 0 10px;  
-  width: 60%;
-  box-sizing: border-box;  
-  margin-top: 10px;
 }
 
 .bla {
-background-color: #000000;
+  width: 400px;
 }
 
-.container-offering {
-}
-
-.container-testimonials {
-  background-color: #edf1f5;
-  height: fit-content;
-  margin-top: 80px;
-}
-
-.container-takki {
-  background-color: #edf1f5;
-  height: 160px;
-  text-align: center;
-}
 
 .input-box::placeholder {
-  color: #b3b3b3;
-}
-
-.input-box2::placeholder {
   color: #b3b3b3;
 }
 
@@ -267,7 +191,6 @@ background-color: #000000;
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
-  margin-bottom: 3vw;
 }
 
 .row {
@@ -293,7 +216,7 @@ background-color: #000000;
 
 .ko-img {
   width: 100% !important;
-  height: 110vh;
+  height: 80vh;
   /* min-height: 620px !important; */
   object-fit: cover !important;
   object-position: center top !important;
@@ -307,34 +230,18 @@ background-color: #000000;
   display: none;
 }
 
+
+
 .recommend {
   /* display: flex;  */
   padding: 10px 0px;
   /* justify-content: space-between;    */
 }
 
-.recommend2 {
-  /* display: flex;  */
-  padding: 10px 0px;
-  /* justify-content: space-between;    */
-}
-
 .rec-small {
-  margin: 20px;
-  flex-grow: 1;
-  justify-content: center;  
-  height: fit-content;
-}
-
-/*hvítu kassarnir utan um quotes */
-.rec-small2 {
-  margin: 10px;
-  margin-top: 1px;
-  padding: 10px;
-  flex-grow: 1;
-  justify-content: center;
-  background-color: #f7fbff;
-  height: fit-content;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center;  */
 }
 
 .foofooter {
@@ -344,17 +251,10 @@ background-color: #000000;
 }
 
 .rec-img {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin: 0 15px;
-}
-
-.rec-img2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 35px;
 }
 
 .job-title {
@@ -371,21 +271,14 @@ background-color: #000000;
 @media only screen and (min-width: 1024px) {
   .recommend {
     display: flex;
-    flex-direction: row;
+    flex-direction: columns;
     height: 20vh;
-  }
-
-  .recommend2 {
-    display: flex;
-    flex-direction: row;
-    height: 40vh;
   }
 
   .rec-small {
     align-items: center;
   }
 }
-
 
 /* BIG TABLET */
 @media only screen and (min-width: 876px) and (max-width: 1024px) {
@@ -396,71 +289,23 @@ background-color: #000000;
     /* background-color: yellow; */
   }
 
-  .recommend2 {
-    display: flex;
-    flex-direction: column;
-    /* height: 20vh; */
-    /* background-color: yellow; */
-  }
-
   .rec-small {
-    padding: 15px 0px;
-    flex-direction: column;
-    align-items: center;
+    padding: 30px 0px;
   }
 }
-
-
-
-
-/*hvítu kassarnir utan um quotes */
-/*
-.rec-small2 {
-  flex-grow: 1;
-  justify-content: center;
-  padding: 15px 0px;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f7fbff;
-}
-
-.rec-small3 {
-  flex-grow: 1;
-  justify-content: center;
-  padding: 15px 0px;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f7fbff;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-*/
 
 /* SMALL TABLET */
 @media only screen and (max-width: 876px) {
-  /*.tilbod-takki {
+  .tilbod-takki {
     display: none;
-  }*/
+  }
 
   .title-st {
     font-size: 28px;
   }
 
-  .title-st2 {
-    font-size: 34px;
-    line-height: 17px;
-  }
-
-  .radgjof2 {
-    text-align: center;
-  }
-
   .rec-small {
     padding: 20px 0px;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1px;
-
   }
 
   .logo {
@@ -473,27 +318,11 @@ background-color: #000000;
   }
 }
 
-/*hvítu kassarnir utan um quotes */
-/*
-.rec-small2 {
-  flex-grow: 1;
-  justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.rec-small3 {
-  flex-grow: 1;
-  justify-content: center;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-*/
 /* PHONE */
 @media only screen and (max-width: 600px) {
   .logo {
-    width: 204px;
-    height: 35px;
+    width: 274px;
+    height: 47px;
   }
 
   .dalkur {
@@ -506,11 +335,7 @@ background-color: #000000;
   }
 
   .recommend {
-    padding: 20px 0px;
-  }
-
-  .recommend2 {
-    padding: 20px 0px;
+    padding: 30px 0px;
   }
 
   .ko-img {
@@ -528,7 +353,6 @@ background-color: #000000;
     flex-direction: column;
     /* width: 90vw; */
     align-items: center;
-    margin-top: 1px;
   }
 
   .spassia {
@@ -544,31 +368,13 @@ background-color: #000000;
   .title-st {
     text-align: center;
     font-size: 25px;
-    margin-top: 15px;
-  }
-
-  .title-st2 {
-    text-align: center;
-    font-size: 28px;
-    line-height: 10px;
   }
 
   .radgjof {
     text-align: center;
     font-size: 15px;
+
   }
-
-  .radgjof2 {
-  text-align: : center;
-  padding-left: 25px;
-  }
-
-  .read-m2 {
-  text-align: center;
-  padding: 26px;
-  font-size: 20px;
-}
-
 
   /* .your-name {
     text-align: center;
@@ -585,6 +391,7 @@ background-color: #000000;
   }
 
   /*
+
   .arrow-up {
     position: relative;
     width: 0;
@@ -605,6 +412,8 @@ background-color: #000000;
     display: none; */
 
   }
+
+
 
   .ko-img2 {
     display: initial;
