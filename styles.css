@@ -179,15 +179,20 @@ h1 {
 }
 
 .btn1 {
-  width: 240px;
+  width: 280px;
   height: 60px;
-  margin-top: 30px;
-
+  margin: 10px;
 }
 
 .btn2 {
   padding: 0 10px;  
-  width: 60%;
+  width: 100%;
+  height: 50px;
+}
+
+.btn3 {
+  padding: 0 10px;  
+  width: 85%;
   height: 50px;
 }
 
@@ -231,7 +236,7 @@ h1 {
   height: 48px;
   font-size: 17px;
   padding: 0 10px;  
-  width: 60%;
+  width: 85%;
   box-sizing: border-box;  
   margin-top: 10px;
 }
@@ -246,12 +251,11 @@ background-color: #000000;
 .container-testimonials {
   background-color: #edf1f5;
   height: fit-content;
-  margin-top: 80px;
 }
 
 .container-takki {
   background-color: #edf1f5;
-  height: 160px;
+  height: 110px;
   text-align: center;
 }
 
@@ -332,6 +336,8 @@ background-color: #000000;
   margin: 10px;
   margin-top: 1px;
   padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px #BFBFBF;
   flex-grow: 1;
   justify-content: center;
   background-color: #f7fbff;
@@ -384,6 +390,15 @@ background-color: #000000;
 
   .rec-small {
     align-items: center;
+    width: 100px;
+  }
+
+  .radgjof2 {
+    box-shadow: 0px 2px 5px #BFBFBF;
+  }
+
+  .container-testimonials {
+  margin-top: 110px;
   }
 }
 
@@ -409,6 +424,15 @@ background-color: #000000;
     flex-direction: column;
     align-items: center;
   }
+
+  .radgjof2 {
+    box-shadow: 0px 2px 5px #BFBFBF;
+  }
+
+  .container-testimonials {
+  margin-top: 10px;
+  }
+
 }
 
 
@@ -453,20 +477,27 @@ background-color: #000000;
   }
 
   .radgjof2 {
-    text-align: center;
   }
 
   .rec-small {
     padding: 20px 0px;
     flex-direction: column;
     align-items: center;
-    margin-top: 1px;
+    margin: 1px;
 
   }
 
   .logo {
     width: calc(274px * 0.8);
     height: calc(47px * 0.8);
+  }
+
+  .rec-small2 {
+  margin: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 1px;
+  padding: 10px;
   }
 
   .dalkur {
@@ -507,7 +538,7 @@ background-color: #000000;
   }
 
   .recommend {
-    padding: 20px 0px;
+    padding: 1px;
   }
 
   .recommend2 {
@@ -529,7 +560,7 @@ background-color: #000000;
     flex-direction: column;
     /* width: 90vw; */
     align-items: center;
-    margin-top: 1px;
+    margin: 1px;
   }
 
   .spassia {
@@ -557,19 +588,27 @@ background-color: #000000;
   .radgjof {
     text-align: center;
     font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .radgjof2 {
-  text-align: : center;
-  padding-left: 25px;
-  }
+  width: 100%  }
 
   .read-m2 {
   text-align: center;
-  padding: 26px;
   font-size: 20px;
-}
+  }
 
+  .container-testimonials {
+  margin-top: 1px;
+  }
+
+  .btn1 {
+  width: 380px;
+  height: 60px;
+  margin: 10px;
+  }
 
   /* .your-name {
     text-align: center;
@@ -641,5 +680,19 @@ background-color: #000000;
   .bla {
     width: 100%;
   }
+
+  .rec-small2 {
+  margin: 22px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 1px;
+  padding: 10px;
+  }
+
+  .spassia {
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
 
 }
