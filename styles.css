@@ -53,6 +53,7 @@
   /* padding: 40px 20px; */
   border: 1px solid #888;
   width: 400px; /* Could be more or less, depending on screen size */
+  height: 670px;
 }
 
 /* The Close Button */
@@ -688,6 +689,7 @@ background-color: #000000;
 
   .modal-cont {
     width: 98vw;
+    height: 700px;
   }
 
   .formform {
