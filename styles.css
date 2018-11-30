@@ -610,15 +610,19 @@ background-color: #000000;
     font-size: 15px;
     padding-left: 37px;
     padding-right: 37px;
-    background-color: #fb3234;
   }
 
   .radgjof2 {
-  width: 100%  }
+  width: 100%  
+  }
+
+  .read-m {
+  font-size: 16px;
+  }
 
   .read-m2 {
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   }
 
   .container-testimonials {
