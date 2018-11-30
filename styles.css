@@ -80,14 +80,12 @@ body {
 }
 
 .title-st {
-  width: 900px;
   height: 50px;
   font-size: 40px;
   margin-top: 56px;
 }
 
 .title-st2 {
-  width: 900px;
   height: 50px;
   font-size: 40px;
   font-weight: bold;
@@ -400,6 +398,17 @@ background-color: #000000;
   .container-testimonials {
   margin-top: 110px;
   }
+
+  .title-st {
+  width: 900px;
+  }
+
+  .title-st2 {
+  width: 900px;
+  }
+
+
+
 }
 
 
@@ -431,6 +440,14 @@ background-color: #000000;
 
   .container-testimonials {
   margin-top: 10px;
+  }
+
+  .title-st {
+  width: 600px;
+  }
+
+  .title-st2 {
+  width: 600px;
   }
 
 }
@@ -469,11 +486,13 @@ background-color: #000000;
 
   .title-st {
     font-size: 28px;
+    width: 400px;
   }
 
   .title-st2 {
     font-size: 34px;
     line-height: 17px;
+    width: 400px;
   }
 
   .radgjof2 {
@@ -589,7 +608,7 @@ background-color: #000000;
     text-align: center;
     font-size: 15px;
     padding-left: 37px;
-    padding-right: 37px;
+    padding-right: 37fpx;
   }
 
   .radgjof2 {
