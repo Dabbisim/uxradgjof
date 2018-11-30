@@ -52,8 +52,19 @@
   margin: 5% auto;
   /* padding: 40px 20px; */
   border: 1px solid #888;
+  border-radius: 8px;
   width: 400px; /* Could be more or less, depending on screen size */
   height: 670px;
+}
+
+/* Modal Content/Box  */
+.modal-cont2 {
+  background-color: #f7fbff;
+  margin: 5% auto;
+  /* padding: 40px 20px; */
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 400px; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -408,7 +419,9 @@ background-color: #000000;
   width: 900px;
   }
 
-
+  .modal-cont2 {
+    height: 360px;
+  }
 
 }
 
@@ -449,6 +462,10 @@ background-color: #000000;
 
   .title-st2 {
   width: 600px;
+  }
+
+  .modal-cont2 {
+    height: 360px;
   }
 
 }
@@ -522,6 +539,10 @@ background-color: #000000;
 
   .dalkur {
     width: 300px;
+  }
+
+  .modal-cont2 {
+    height: 360px;
   }
 }
 
@@ -694,7 +715,12 @@ background-color: #000000;
 
   .modal-cont {
     width: 98vw;
-    height: 700px;
+    height: 650px;
+  }
+
+  .modal-cont2 {
+    width: 98vw;
+    height: 360px;
   }
 
   .formform {
