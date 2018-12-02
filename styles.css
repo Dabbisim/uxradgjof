@@ -54,7 +54,7 @@
   border: 1px solid #888;
   border-radius: 8px;
   width: 400px; /* Could be more or less, depending on screen size */
-  height: 670px;
+  height: 620px;
 }
 
 /* Modal Content/Box  */
@@ -715,7 +715,7 @@ background-color: #000000;
 
   .modal-cont {
     width: 98vw;
-    height: 670px;
+    height: 620px;
   }
 
   .modal-cont2 {
