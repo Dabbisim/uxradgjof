@@ -13,7 +13,6 @@
     <meta property="og:image" content="https://uxradgjof.is/assets/5.jpg">
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
-    <input type="hidden" name="_next" value="https://uxradgjof.is/html"/>
 
     <script>
         /**
@@ -21,6 +20,9 @@
             * FUNCTIONS 
             *
             **/
+
+                <input type="hidden" name="_next" value="https://uxradgjof.is/html"/>
+
 
         function selectContactMedium(el1, el2, el3, str) {
             var element1 = document.getElementById(el1);
@@ -40,7 +42,6 @@
         function sendForm(el1, el2) {
             var name = document.getElementById(el1).value
             var phone = document.getElementById(el2).value
-            <input type="hidden" name="_next" value="https://mysite.com/thanks.html"/>
             modal.style.display = 'none';
             document.getElementById('main-content').innerHTML = '<h1>Augnablik...</h1>';
             document.getElementById('tilbod-t').style.display = 'none';
@@ -50,7 +51,6 @@
 
         function post(path, params, method) {
             method = method || "post"; // Set method to post by default if not specified.
-            <input type="hidden" name="_next" value="https://mysite.com/thanks.html"/>
             // The rest of this code assumes you are not using a library.
             // It can be made less wordy if you use one.
             var form = document.createElement("form");
