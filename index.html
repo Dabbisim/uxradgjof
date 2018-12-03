@@ -10,17 +10,15 @@
     <meta property="og:description" content="Ráðgjöf í notendaupplifun">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://wwww.uxradgjof.is">
-    <meta property="og:image" content="https://uxradgjof.is/assets/5.jpg">
+    <meta property="og:image" content="https://uxradgjof/assets/5.jpg">
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png">
-
     <script>
         /**
             *
             * FUNCTIONS 
             *
             **/
-
 
         function selectContactMedium(el1, el2, el3, str) {
             var element1 = document.getElementById(el1);
@@ -40,6 +38,7 @@
         function sendForm(el1, el2) {
             var name = document.getElementById(el1).value
             var phone = document.getElementById(el2).value
+
             modal.style.display = 'none';
             document.getElementById('main-content').innerHTML = '<h1>Augnablik...</h1>';
             document.getElementById('tilbod-t').style.display = 'none';
@@ -49,6 +48,7 @@
 
         function post(path, params, method) {
             method = method || "post"; // Set method to post by default if not specified.
+
             // The rest of this code assumes you are not using a library.
             // It can be made less wordy if you use one.
             var form = document.createElement("form");
