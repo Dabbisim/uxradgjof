@@ -284,6 +284,12 @@ background-color: #000000;
   margin-bottom: 3vw;
 }
 
+.container6 {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+
 .row {
   display: flex;
   flex-direction: row;
