@@ -201,6 +201,7 @@ h1 {
 .btn1 {
   width: 280px;
   height: 60px;
+  margin: 10px;
 }
 
 .btn2 {
@@ -274,7 +275,7 @@ background-color: #000000;
 
 .container-takki {
   background-color: #edf1f5;
-  height: 110px;
+  height: 120px;
   text-align: center;
 }
 
@@ -291,6 +292,7 @@ background-color: #000000;
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 3vw;
+  margin-top: 0vw;
 }
 
 .container6 {
