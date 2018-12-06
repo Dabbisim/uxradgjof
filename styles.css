@@ -4,6 +4,12 @@
 
 .contact-bold {
   color: #ff9933;
+  text-decoration-style: none;
+  /* font-weight: 600; */
+}
+
+.contact-bold2 {
+  color: #ff9933;
   /* font-weight: 600; */
 }
 
