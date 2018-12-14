@@ -272,11 +272,13 @@ background-color: #000000;
 }
 
 .container-offering {
+  min-height: 300px !important;
 }
 
 .container-testimonials {
   background-color: #edf1f5;
   height: fit-content;
+  min-height: 500px !important;
 }
 
 .container-takki {
@@ -329,7 +331,7 @@ background-color: #000000;
 .ko-img {
   width: 100% !important;
   height: 110vh;
-  /* min-height: 620px !important; */
+  min-height: 800px !important;
   object-fit: cover !important;
   object-position: center top !important;
 }
@@ -414,6 +416,7 @@ background-color: #000000;
 
 /* DESKTOP */
 @media only screen and (min-width: 1024px) {
+
   .recommend {
     display: flex;
     flex-direction: row;
@@ -449,7 +452,7 @@ background-color: #000000;
 
   .modal-cont2 {
     height: 320px;
-  }
+  } 
 
 }
 
