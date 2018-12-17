@@ -331,7 +331,7 @@ background-color: #000000;
 .ko-img {
   width: 100% !important;
   height: 110vh;
-  min-height: 800px !important;
+  min-height: 800px!important;
   object-fit: cover !important;
   object-position: center top !important;
 }
